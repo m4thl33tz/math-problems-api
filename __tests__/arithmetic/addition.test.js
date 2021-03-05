@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../lib/app');
+const app = require('../../lib/app');
 
 describe('/arithmetic/addition routes', () => {
   it('returns some easy addition problems', async() => {
