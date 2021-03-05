@@ -7,7 +7,7 @@
     },
     "multiplication": {
       "easy": ["1", "1"],
-      "medium": ["2", "1"],
+      "medium": ["2", "2"],
       "hard": ["3", "3"]
     },
     "subtraction": {
