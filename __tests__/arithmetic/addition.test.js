@@ -13,7 +13,8 @@ describe('/arithmetic/addition routes', () => {
       rightNumber, 
       equation, 
       solution,
-      operation
+      operation,
+      mml
     } = problems[0];
 
     expect(leftNumber).toEqual(expect.any(Number));
@@ -27,6 +28,8 @@ describe('/arithmetic/addition routes', () => {
     expect(solution).toEqual(expect.any(Number));
 
     expect(operation).toEqual({ text: 'addition', symbol: '+' });
+
+    expect(mml).toEqual(expect.any(String));
   });
 
   it('returns some medium addition problems', async() => {
