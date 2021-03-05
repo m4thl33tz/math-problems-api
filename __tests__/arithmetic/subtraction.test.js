@@ -13,7 +13,8 @@ describe('/arithmetic/subtraction routes', () => {
       rightNumber, 
       equation, 
       solution,
-      operation
+      operation,
+      mml
     } = problems[0];
 
     expect(leftNumber).toEqual(expect.any(Number));
@@ -27,6 +28,8 @@ describe('/arithmetic/subtraction routes', () => {
     expect(solution).toEqual(expect.any(Number));
 
     expect(operation).toEqual({ text: 'subtraction', symbol: '-' });
+
+    expect(mml).toEqual(expect.any(String));
   });
 
   it('returns some medium subtraction problems', async() => {
@@ -40,7 +43,8 @@ describe('/arithmetic/subtraction routes', () => {
       rightNumber, 
       equation, 
       solution,
-      operation
+      operation,
+      mml
     } = problems[0];
 
     expect(leftNumber).toEqual(expect.any(Number));
@@ -54,6 +58,8 @@ describe('/arithmetic/subtraction routes', () => {
     expect(solution).toEqual(expect.any(Number));
 
     expect(operation).toEqual({ text: 'subtraction', symbol: '-' });
+
+    expect(mml).toEqual(expect.any(String));
   });
 
   it('returns some hard subtraction problems', async() => {
@@ -67,7 +73,8 @@ describe('/arithmetic/subtraction routes', () => {
       rightNumber, 
       equation, 
       solution,
-      operation
+      operation,
+      mml
     } = problems[0];
 
     expect(leftNumber).toEqual(expect.any(Number));
@@ -81,5 +88,7 @@ describe('/arithmetic/subtraction routes', () => {
     expect(solution).toEqual(expect.any(Number));
 
     expect(operation).toEqual({ text: 'subtraction', symbol: '-' });
+
+    expect(mml).toEqual(expect.any(String));
   });
 });
