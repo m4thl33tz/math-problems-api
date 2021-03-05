@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../lib/app');
 
-describe('Arithmetic Routes', () => {
+describe('/arithmetic/addition routes', () => {
   it('returns some addition problems', async() => {
     const { body: problems } = await request(app)
       .get('/api/v1/arithmetic/addition?number=5&difficulty=medium');
