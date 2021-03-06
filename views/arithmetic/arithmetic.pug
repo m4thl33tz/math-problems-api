@@ -2,11 +2,26 @@ extends ../_layout
 
 block content 
   main 
-    ul 
-      li Addition 
-        p Link: /api/v1/arithmetic/addition?
-        article Paramters: number, difficulty
+    p Link: /api/v1/arithmetic/operation?number, difficulty
+    p Operations
+      ul 
+        li Addition 
           section Difficulties
-            p Easy - 1 digit by 1 digit 
-            p Medium - 2 digit by 2 digit 
-            p Hard - 3 digit by 3 digit 
+            p easy - 1 digit by 1 digit 
+            p medium - 2 digit by 2 digit 
+            p hard - 3 digit by 3 digit 
+        li Multiplcation 
+          section Difficulties
+            p easy - 1 digit by 1 digit 
+            p medium - 2 digit by 2 digit 
+            p hard - 3 digit by 3 digit 
+        li Subtraction 
+          section Difficulties
+            p easy - 2 digit by 1 digit 
+            p medium - 3 digit by 2 digit 
+            p hard - 4 digit by 3 digit 
+        li Division 
+          section Difficulties
+            p easy - 2 digit by 1 digit 
+            p medium - 3 digit by 2 digit 
+            p hard - 4 digit by 3 digit 
